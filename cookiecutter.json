@@ -1,6 +1,8 @@
 {
-    "project_name": "project_name",
+    "project_name": "project name",
     "repo_name": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
     "package_name": "src",
-    "description": "A truly neutral research cookie cutter"
-}
+    "author_name": "Ege Altan",
+    "description": "A short description of the project.",
+    "open_source_license": ["MIT", "BSD-3-Clause", "No license file"]
+  }
