@@ -14,16 +14,18 @@
 │       ├── devcontainer.json
 │ 
 ├── {{cookiecutter.package_name}}
-│       ├── __init__.py
+│       ├── data            <- Data making code
+│       ├── visualization   <- Data visualization code
+│       ├── models          <- Code that houses all models
 │ 
-├── data                <- Need to put /data/ in .gitignore
+├── data                    <- Need to put /data/ in .gitignore
 │ 
 ├── docs
 │ 
 ├── references
 │ 
-├── results             <- all results, including interim figs, .hd5s, etc.
-│       ├── figures     <- Where tidied up figures live
+├── results                 <- all results, including interim figs, .hd5s, etc.
+│       ├── figures         <- Where tidied up figures live
 │ 
 ├── scripts
 │ 
@@ -33,11 +35,10 @@
 │ 
 ├── Dockerfile
 │ 
-├── requirements.txt    <- This is read by the Dockerfile
+├── requirements.txt        <- This is read by the Dockerfile
 │ 
-├── README.md           <- This is read by the Dockerfile
+├── README.md               <- This is read by the Dockerfile
 │
-├── setup.py            <- Top level readme file.
+├── setup.py                <- Top level readme file.
 │   
-├── hooks
 ```

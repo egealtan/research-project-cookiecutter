@@ -30,14 +30,13 @@ conda create --name {{cookiecutter.repo_name}} python=3.8
 conda activate {{cookiecutter.repo_name}}
 conda env export > environment.yml
 
-Install your new project in your local conda environment with:
+Install your new project in your local environment with:
 
 pip install -e .
 
-You will need to manually add data to .gitignore to prevent it from syncing to
+You will need to manually add /data/ to .gitignore to prevent it from syncing to
 version control.
 
 Check Dockerfile, requirements.txt, and devcontainer.json and modify as needed.
-For example, if you'd like pytorch-lightning, need to add it to requirements.
 """
 print(help)
