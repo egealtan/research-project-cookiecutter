@@ -19,6 +19,8 @@
 │       ├── models          <- Code that houses all models
 │ 
 ├── data                    <- Need to put /data/ in .gitignore
+│       ├── raw             <- Raw data, never change this
+│       ├── processed       <- Processed data that is used in figures
 │ 
 ├── docs
 │ 
@@ -28,6 +30,8 @@
 │       ├── figures         <- Where tidied up figures live
 │ 
 ├── scripts
+│       ├── Generate Figures.ipynb  
+│       ├── run_analysis.py
 │ 
 ├── tests
 │

@@ -1,42 +1,27 @@
 help = """
-Your project has been created!
-_____________________________________________________________________________
-                            ___________ _
-  \/                    __/   .::::.-'-(/-/)
-                     _/:  .::::.-' .-'\/\_`*******            __ (_))
-        \/          /:  .::::./   -._-.  d\|                 (_))_(__))
-                     /: ("'"'/    '.  (__/||             (_))__(_))--(__))
-                      \::).-'  -._  \/ \\/\|
-              __ _ .-'`)/  '-'. . '. |  (i_O
-          .-'      \       -'      '\|
-     _ _./      .-'|       '.  (    \\                           % % %
-  .-'   :      '_  \         '-'\  /|/      @ @ @               % % % %
- /      )\_      '- )_________.-|_/^\      @ @ @@@             % %\/% %
- (   .-'   )-._-:  /        \(/\'-._ `.     @|@@@@@              ..|........
-  (   )  _//_/|:  /          `\()   `\_\     |/_@@               )'-._.-._.-
-   ( (   \()^_/)_/             )/      \\    /                  /   /
-    )  _.-\\.\(_)__._.-'-.-'-.//_.-'-.-.)\-'/._                /       
-.-.-.-'   _o\ \\\     '::'   (o_ '-.-' |__\'-.-;~ ~ ~ ~ ~ ~ ~~/   /\   
-          \ /  \\\__          )_\    .:::::::.-'\            '- - -|
-     :::''':::::^)__\:::::::::::::::::'''''''-.  \                  '- - - - 
-    :::::::  '''''''''''   ''''''''''''':::. -'\  \       C. SWANSIGER
-_____':::::_____________________________________\__\_________________________
+*******************************************************************************
+*******************************************************************************
+Your project {{cookiecutter.repo_name}} has been created!
+*******************************************************************************
+*******************************************************************************
 
-If you have not done so already, create a conda environment for your new 
-project with:
+1) Manually add data or data/raw to .gitignore if you'd like
+2) Check requirements.txt and update to your liking
+3) Check Dockerfile and update to your liking
+4) Modify .devcontainer/devcontainer.json. By defult, --runtime-nvidia flag is
+   used for GPU access.
+5) Make sure the extension Remote Containers and Docker are installed on VS 
+   Code
+6) Run the Docker application (or only the daemon) on your local machine
+7) In VS Code, press Ctrl+Shift+P "Remote Containers: Rebuild and Reopen in 
+   Container"
+8) You should have a working environment! Install your new project in your 
+   remote Docker environment with:
 
-cd {{cookiecutter.repo_name}}
-conda create --name {{cookiecutter.repo_name}} python=3.8
-conda activate {{cookiecutter.repo_name}}
-conda env export > environment.yml
+   pip install -e .
 
-Install your new project in your local environment with:
-
-pip install -e .
-
-You will need to manually add /data/ to .gitignore to prevent it from syncing to
-version control.
-
-Check Dockerfile, requirements.txt, and devcontainer.json and modify as needed.
+   Note that the -e flag makes your package editable and '.' is the current 
+   directory.
+9) Don't forget to initialize your repository!
 """
 print(help)

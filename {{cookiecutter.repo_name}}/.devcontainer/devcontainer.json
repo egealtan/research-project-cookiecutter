@@ -13,7 +13,7 @@
 	"settings": {},
 	
 	// Add the IDs of extensions you want installed when the container is created.
-	"extensions": ["ms-python.python","ms-toolsai.jupyter","equinusocio.vsc-material-theme","ms-azuretools.vscode-docker","github.vscode-pull-request-github"],
+	"extensions": ["ms-python.python","ms-toolsai.jupyter","equinusocio.vsc-material-theme","ms-azuretools.vscode-docker","github.vscode-pull-request-github","njpwerner.autodocstring","kevinrose.vsc-python-indent","formulahendry.code-runner"],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
