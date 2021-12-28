@@ -10,7 +10,7 @@
 
 ├── LICENSE
 │ 
-├── .devcontainer
+├── .devcontainer           <- Contains the configuration file for developing in a remote container.
 │       ├── devcontainer.json
 │ 
 ├── {{cookiecutter.package_name}}
@@ -41,8 +41,8 @@
 │ 
 ├── requirements.txt        <- This is read by the Dockerfile
 │ 
-├── README.md               <- This is read by the Dockerfile
+├── README.md               <- Top level readme file.
 │
-├── setup.py                <- Top level readme file.
+├── setup.py
 │   
 ```
