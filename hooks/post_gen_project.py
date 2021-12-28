@@ -15,6 +15,10 @@ Your project {{cookiecutter.repo_name}} has been created!
 6) Run the Docker application (or only the daemon) on your local machine
 7) In VS Code, press Ctrl+Shift+P "Remote Containers: Rebuild and Reopen in 
    Container"
-8) Don't forget to initialize your repository!
+8) Install {{cookiecutter.package_name}} -> -e: editable .:current dir
+
+   pip install -e .
+
+9) Don't forget to initialize your repository!
 """
 print(help)

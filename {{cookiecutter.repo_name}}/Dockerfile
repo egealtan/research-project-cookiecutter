@@ -4,7 +4,7 @@ COPY requirements.txt ./
 
 COPY setup.py ./
 
-COPY {{cookiecutter.package_name}} ./
+COPY /{{cookiecutter.package_name}} ./
 
 RUN apt-get update && \
     apt-get upgrade -y && \
