@@ -21,6 +21,7 @@ cookiecutter==1.7.3
 geotorch==0.3.0
 ipywidgets==7.6.5
 wandb==0.12.9
+scikit-dimension==0.3
 
 #For netrep, A.H.Williams' commit on December 13 is used. If you want to use master branch:
 #git+git://github.com/ahwillia/netrep@master#egg=netrep 
